@@ -53,13 +53,13 @@ surpriseBtn.addEventListener("click", () => {
     mainScreen.style.display = "none";
     movieScreen.style.display = "block";
 
-    let position = 1200;
+    let position = 500;
 
     credits.style.bottom = -position + "px";
 
     function scrollCredits() {
 
-        position -= 1;
+        position -= 4;
 
         credits.style.bottom = (-position) + "px";
 
