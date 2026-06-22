@@ -59,11 +59,15 @@ surpriseBtn.addEventListener("click", () => {
 
     function scrollCredits() {
 
-        position -= 2;
+        if (position > 150) {
 
-        credits.style.bottom = (-position) + "px";
+            position -= 2;
 
-        requestAnimationFrame(scrollCredits);
+            credits.style.bottom = (-position) + "px";
+
+            requestAnimationFrame(scrollCredits);
+
+        }
     }
 
     scrollCredits();
